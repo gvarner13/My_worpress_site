@@ -1,5 +1,8 @@
 <html>
-<head><?php wp_head(); ?></head>
+<head>
+    <?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
+</head>
 <body <?php body_class(); ?>>
     <header id="masthead" role="banner">
         <div class="navagation">
@@ -30,16 +33,23 @@
         <div class="intro">
             <div>
                 <h2>
-                    <span>b</span>
+                    <span>&#60;b&#62;</span>
                     Hello
-                    <span>b</span>
+                    <span>&#60;/b&#62;</span>
                     <br>
                     I'm Gary, Full-stack
                     <br>
                     Web Developer
                 </h2>
                 <div>
-                    A WordPress website about Hypergiant company which creates hyper-efficient and scalable. The careful have the as a spirits and client ihave by assistant have took initial sentences omens.
+                    <?php
+                        if ( have_posts() ) {
+                            while (have_posts()) {
+                                the_post();
+                                the_content();
+                            }
+                        }
+                    ?>
                 </div>
             </div>
             <div>
@@ -47,8 +57,8 @@
             </div>
         </div>
         <div class="About">
-            <div>
-                <h2>&#60;About Me&#62;</h2>
+            <div class="section-title">
+                <h1>&#60;About Me&#62;</h1>
             </div>
             <div>
                 <ul>
@@ -58,25 +68,16 @@
             </div>
         </div>
         <div class="Contact Me">
-            <div>
-                <h2>&#60;Contact Me&#62;</h2>
+            <div class="section-title">
+                <h1>&#60;Contact Me&#62;</h1>
             </div>
             <div>
                 Put a contact form and social links here
             </div>
         </div>
     </div>
-
-<h1>Front Page</h1>
 <?php
-if ( have_posts() ) {
-    while (have_posts()) {
-        the_post();
-        the_title('<h3>', '</h3>');
-        the_content();
-    }
-}
-wp_footer();
+    wp_footer();
 ?>
 </body>
 </html>
