@@ -4,7 +4,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
-    <header id="masthead" role="banner">
+    <header id="masthead" role="banner" class="nav-header">
+        <div class="welcome-msg">
+            Welcome
+        </div>
         <div class="navagation">
             <nav id="main-navigation" class="main-navigation" role="navigation">
                 <div class="menu">

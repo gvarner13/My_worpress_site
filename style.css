@@ -264,6 +264,12 @@ body {
     color: #FFFFFF;
 }
 
+.nav-header {
+	display: flex;
+	justify-content: space-between;
+	background: #6E6C6C;
+}
+
 .menu {
     box-sizing: border-box;
 }
@@ -275,14 +281,23 @@ body {
 .menu ul {
     display: flex;
     list-style: none;
-    border:1px solid black;
     margin: 0;
     padding: 0;
     background: #6E6C6C;
 }
 
-.menu li {
+/* .menu li {
     flex: 1;
+} */
+
+.welcome-msg {
+	color: #FFFFFF;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 25px 15px;
+    display: inline-block;
+	text-align: center;
 }
 
 .menu ul li a {
@@ -290,10 +305,10 @@ body {
     font-weight: 100;
     letter-spacing: 2px;
     text-decoration: none;
-    padding: 30px 10px;
+    padding: 25px 15px;
     display: inline-block;
     width: 100%;
-    text-align: center;
+	text-align: center;
 }
 
 .menu a:hover {
