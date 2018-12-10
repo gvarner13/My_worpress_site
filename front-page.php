@@ -63,11 +63,43 @@
             <div class="section-title">
                 <h1>&#60;About Me&#62;</h1>
             </div>
-            <div>
-                <ul>
-                    <li>Hign school</li>
-                    <li>Started College</li>
-                </ul>
+            <div class="about-content">
+                <div class="about-list">
+                    <div>
+                        <h4>Locations</h4>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="about-list-item">
+                        Atlanta, GA
+                    </div>
+                    <div class="about-list-item">
+                        West Palm Beach, FL
+                    </div>
+                </div>
+                <div class="about-list">
+                    <div>
+                        <h4>Education</h4>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="about-list-item">
+                        Palm Beach State College
+                    </div>
+                    <div class="about-list-item">
+                        Santaluces High School
+                    </div>
+                </div>
+                <div class="about-list">
+                    <div>
+                        <h4>Employment</h4>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="about-list-item">
+                        Incursus, Inc
+                    </div>
+                    <div class="about-list-item">
+                        Apto Solutions
+                    </div>
+                </div>
             </div>
         </div>
         <div class="Contact Me">
