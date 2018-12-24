@@ -6,7 +6,7 @@
 <body <?php body_class(); ?>>
     <header id="masthead" role="banner" class="nav-header">
         <div class="welcome-msg">
-            Welcome
+            <?php random_welcome_message(); ?>
         </div>
         <div class="navagation">
             <nav id="main-navigation" class="main-navigation" role="navigation">
@@ -40,7 +40,7 @@
                     Hello
                     <span style="color: #58F6C9;">&#60;/b&#62;</span>
                     <br>
-                    I'm Gary, Full-stack
+                    I'm Gary, A Full-stack
                     <br>
                     Web Developer
                 </h2>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div>
-                <img src="https://via.placeholder.com/550X700.png">
+                <img src="https://via.placeholder.com/450X600.png">
             </div>
         </div>
         <div class="About">

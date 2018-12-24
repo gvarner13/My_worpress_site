@@ -320,6 +320,10 @@ body {
     border-bottom: 4px solid #58F6C9;
 }
 
+.content > div {
+	margin-bottom: 2em;
+}
+
 .intro {
     display: flex;
     width: 1300px;
